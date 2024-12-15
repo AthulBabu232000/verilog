@@ -1,0 +1,255 @@
+$date
+	Sun Dec 08 23:33:02 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module mux16to1from4to1tb $end
+$var wire 1 ! tbout $end
+$var reg 16 " tbin [15:0] $end
+$var reg 4 # tbsel [3:0] $end
+$scope module mu $end
+$var wire 16 $ in [15:0] $end
+$var wire 4 % sel [3:0] $end
+$var wire 4 & w [3:0] $end
+$var wire 1 ! out $end
+$scope module M1 $end
+$var wire 4 ' in [3:0] $end
+$var wire 2 ( sel [1:0] $end
+$var wire 1 ) out $end
+$upscope $end
+$scope module M2 $end
+$var wire 4 * in [3:0] $end
+$var wire 2 + sel [1:0] $end
+$var wire 1 , out $end
+$upscope $end
+$scope module M3 $end
+$var wire 4 - in [3:0] $end
+$var wire 2 . sel [1:0] $end
+$var wire 1 / out $end
+$upscope $end
+$scope module M4 $end
+$var wire 4 0 in [3:0] $end
+$var wire 2 1 sel [1:0] $end
+$var wire 1 2 out $end
+$upscope $end
+$scope module M5 $end
+$var wire 4 3 in [3:0] $end
+$var wire 2 4 sel [1:0] $end
+$var wire 1 ! out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 4
+b101 3
+02
+b0 1
+b1010 0
+1/
+b0 .
+b1011 -
+0,
+b0 +
+b1100 *
+1)
+b0 (
+b1101 '
+b101 &
+b0 %
+b1010101111001101 $
+b0 #
+b1010101111001101 "
+1!
+$end
+#10
+0!
+0)
+b1 (
+b1 +
+b1 .
+b1100 &
+b1100 3
+12
+b1 1
+b1 #
+b1 %
+#15
+1!
+1)
+b10 (
+1,
+b10 +
+0/
+b10 .
+b11 &
+b11 3
+02
+b10 1
+b10 #
+b10 %
+#20
+b11 (
+b11 +
+1/
+b11 .
+b1111 &
+b1111 3
+12
+b11 1
+b11 #
+b11 %
+#25
+b0 (
+0!
+0,
+b0 +
+b0 .
+b101 &
+b101 3
+02
+b0 1
+b1 4
+b100 #
+b100 %
+#30
+0)
+b1 (
+b1 +
+b1 .
+b1100 &
+b1100 3
+12
+b1 1
+b101 #
+b101 %
+#35
+1)
+b10 (
+1!
+1,
+b10 +
+0/
+b10 .
+b11 &
+b11 3
+02
+b10 1
+b110 #
+b110 %
+#40
+b11 (
+b11 +
+1/
+b11 .
+b1111 &
+b1111 3
+12
+b11 1
+b111 #
+b111 %
+#45
+b0 (
+0,
+b0 +
+b0 .
+b101 &
+b101 3
+02
+b0 1
+b10 4
+b1000 #
+b1000 %
+#50
+0)
+b1 (
+b1 +
+b1 .
+b1100 &
+b1100 3
+12
+b1 1
+b1001 #
+b1001 %
+#55
+1)
+b10 (
+1,
+b10 +
+0!
+0/
+b10 .
+b11 &
+b11 3
+02
+b10 1
+b1010 #
+b1010 %
+#60
+b11 (
+b11 +
+1!
+1/
+b11 .
+b1111 &
+b1111 3
+12
+b11 1
+b1011 #
+b1011 %
+#65
+b0 (
+0,
+b0 +
+b0 .
+0!
+b101 &
+b101 3
+02
+b0 1
+b11 4
+b1100 #
+b1100 %
+#70
+0)
+b1 (
+b1 +
+b1 .
+1!
+b1100 &
+b1100 3
+12
+b1 1
+b1101 #
+b1101 %
+#75
+1)
+b10 (
+1,
+b10 +
+0/
+b10 .
+0!
+b11 &
+b11 3
+02
+b10 1
+b1110 #
+b1110 %
+#80
+b11 (
+b11 +
+1/
+b11 .
+1!
+b1111 &
+b1111 3
+12
+b11 1
+b1111 #
+b1111 %

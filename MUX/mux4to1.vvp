@@ -1,0 +1,56 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001b00200a630 .scope module, "mux4to1behavioraltb" "mux4to1behavioraltb" 2 2;
+ .timescale -8 -9;
+v000001b002006990_0 .var "tbin", 3 0;
+v000001b002006a30_0 .net "tbout", 0 0, L_000001b002006b70;  1 drivers
+v000001b002006ad0_0 .var "tbsel", 1 0;
+S_000001b00200a7c0 .scope module, "mx" "mux4to1behavioral" 2 6, 3 1 0, S_000001b00200a630;
+ .timescale 0 0;
+    .port_info 0 /INPUT 4 "in";
+    .port_info 1 /OUTPUT 1 "out";
+    .port_info 2 /INPUT 2 "sel";
+v000001b00200a950_0 .net "in", 3 0, v000001b002006990_0;  1 drivers
+v000001b002055ab0_0 .net "out", 0 0, L_000001b002006b70;  alias, 1 drivers
+v000001b0020068f0_0 .net "sel", 1 0, v000001b002006ad0_0;  1 drivers
+L_000001b002006b70 .part/v v000001b002006990_0, v000001b002006ad0_0, 1;
+    .scope S_000001b00200a630;
+T_0 ;
+    %vpi_call 2 13 "$dumpfile", "mux4to1.vcd" {0 0 0};
+    %vpi_call 2 14 "$dumpvars", 32'sb00000000000000000000000000000000, S_000001b00200a630 {0 0 0};
+    %pushi/vec4 10, 0, 4;
+    %store/vec4 v000001b002006990_0, 0, 4;
+    %delay 50, 0;
+    %pushi/vec4 0, 0, 2;
+    %store/vec4 v000001b002006ad0_0, 0, 2;
+    %delay 50, 0;
+    %pushi/vec4 1, 0, 2;
+    %store/vec4 v000001b002006ad0_0, 0, 2;
+    %delay 50, 0;
+    %pushi/vec4 2, 0, 2;
+    %store/vec4 v000001b002006ad0_0, 0, 2;
+    %delay 50, 0;
+    %pushi/vec4 3, 0, 2;
+    %store/vec4 v000001b002006ad0_0, 0, 2;
+    %delay 50, 0;
+    %vpi_call 2 20 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_000001b00200a630;
+T_1 ;
+    %vpi_call 2 23 "$monitor", $time, " tbsel = %d, tbin = %h, tbout = %h", v000001b002006ad0_0, v000001b002006990_0, v000001b002006a30_0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "mux4to1behavioraltb.v";
+    "mux4to1behavioral.v";

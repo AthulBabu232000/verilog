@@ -1,0 +1,45 @@
+$date
+	Sun Dec 08 20:44:12 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module mux4to1behavioraltb $end
+$var wire 1 ! tbout $end
+$var reg 4 " tbin [3:0] $end
+$var reg 2 # tbsel [1:0] $end
+$scope module mx $end
+$var wire 4 $ in [3:0] $end
+$var wire 2 % sel [1:0] $end
+$var wire 1 ! out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx %
+b1010 $
+bx #
+b1010 "
+x!
+$end
+#50
+0!
+b0 #
+b0 %
+#100
+1!
+b1 #
+b1 %
+#150
+0!
+b10 #
+b10 %
+#200
+1!
+b11 #
+b11 %
+#250
